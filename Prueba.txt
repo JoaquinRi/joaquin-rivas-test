@@ -11,6 +11,10 @@ Punto 1:
   b- Definir con sus palabras que es una variable?
 
 
+a- A través de la extensión (.py)         ej: EjemploScrpit.py.
+b- Las variables funcionan como contenedores de datos de cualquier tipo 
+   los cuales pueden ser modificados infinitas veces.
+
 
 
 ___________________________________________________________________________________
@@ -22,6 +26,18 @@ Punto 2:
      Cual es la diferencia entre los tipos list y tuple  
 
 
+a-  Datos primitivos: Numéricos (Int, float), los booleanos y las cadenas de caracteres (Strings).
+
+    La diferencia es que el int devuelve numeros enteros (1, 10, 24) 
+    mientras que el float te devuelve numeros decimales (3.14, 4.18)
+
+b-  Secuenciales: Los tipos list, tuple y range.
+    Conjuntos: El tipo set.
+    Mapas: El tipo dict.
+
+    La diferencia es que, los de tipos list o listas es que son mutables, es decir que sus valores pueden
+     cambiar a lo largo de la ejecucion. 
+    Mientras tanto las Tuplas son inmutables las cuales se usan cuando necesitamos colecciones que no puedan ser modificadas.
 
 
 ___________________________________________________________________________________
@@ -57,7 +73,7 @@ Punto 3:
 
    
    Ejecute el código. 
-    a- Cual y porque es el print que se mustra por consola? 
+    a- Cual y porque es el print que se muestra por consola? 
     b- Ahora cambie el valor de "mi_variable" 
 
         mi_variable = 7
@@ -66,10 +82,11 @@ Punto 3:
     Puede hacer uso del debug.
 
 
+a- El print que se muestra por consola es el segundo "Ha ingresado a la segunda validacion"
 
-
-
-
+b- El print que se muestra es el mismo que antes("Ha ingresado a la segunda validacion ya que en el elif
+    dice que si la variable es mayor a 3 imprima "Ha ingresado a la segunda validacion" al 7 ser mayor que 3 se ejecuta
+    el segundo elif lo que no permite la ejecucion del resto del bloque
 
 
 ___________________________________________________________________________________
@@ -88,7 +105,8 @@ Punto 4:
 
 
 
-
+a- El bucle for corta cuando recorre todos los elementos de la coleccion.
+b- Cuando la condicion del while sea falso, el ciclo se corta.
 
 
 
@@ -105,13 +123,11 @@ Punto 5:
   e- Si quisieramos traernos los cambios del repositorio remoto que comando usariamos?
 
 
-
-
-
-
-
-
-
+a- Las areas que lo componen son el working Directory, staging Area y git Repository.
+b- git add .
+c- git commit (nombre del commit) 
+d- git push
+e- git pull
 
 
 ___________________________________________________________________________________
@@ -129,14 +145,12 @@ Punto 6:
      y describa brevemente para que sirve cada una. 
 
 
-
-
-
-
-
-
-
-
+b-  filter(): filtra una lista y devuelve un valor booleano (True o false)
+    map(): Aplica una funcion a cada elemento de una lista.
+    reduce(): Lleva a cabo un cálculo acumulativo sobre una lista de valores y devuelve el resultado.
+    enumerate(): enumerar cualquier tipo de objeto iterable
+    zip(): Se utiliza para mapear los mismos índices en más de un iterable. 
+    Si el número de elementos en cada iterador es desigual, la longitud de la lista devuelta es más corto.
 
 
 ___________________________________________________________________________________
@@ -175,16 +189,8 @@ Punto 7:
 
   Cual es la diferencia entre el return y el yield en un bucle for?
 
-
-
-
-
-
-
-
-
-
-
+  Que el return retorna un elemento y corta la ejecución de la funcion, en cambio el yield
+  te devuelve la coleccion completa en forma de objeto generador
 
 ___________________________________________________________________________________
 
@@ -202,18 +208,13 @@ Punto 8:
     # fin del modulo_a
 
   Y luego lo importa en el modulo_b.py 
+
+  
   Que beneficio le aportaria haber hecho uso de: if __name__ == "__main__":
 
 
-
-
-
-
-
-
-
-
-
+El beneficio es que esto nos permite darnos cuenta si trabajamos en modulos equivocados
+y le da exclusividad a la funcion.
 
 ___________________________________________________________________________________
 
@@ -225,12 +226,13 @@ Punto 9:
 
 
 
+a- Con la palabra reservada (except).
+b- La sentencia con la que se maneja es:   
 
-
-
-
-
-
+try:
+    (secuencia) 
+  except (nombre del tipo de error):                                      
+    print(mensaje)                                        
 
 
 ___________________________________________________________________________________
@@ -239,16 +241,8 @@ Punto 10:
 
   Explique con sus palabras para que sirve un decorador? 
 
-
-
-
-
-
-
-
-
-
-
+Sirve para añadirle funcionalidad a una funcion ya definida.
+  
 
 ___________________________________________________________________________________
 Punto 11:
@@ -290,3 +284,5 @@ Punto 11:
 
     d- Extienda el ejercicio para que ahora la funcion division lance una excepcion en el caso que 
        el divisor sea 0, luego maneje la excepcion donde este llamando dicha funcion.
+
+___________________________________________________________________________________
